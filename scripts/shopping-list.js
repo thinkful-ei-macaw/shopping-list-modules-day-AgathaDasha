@@ -1,10 +1,5 @@
-<<<<<<< HEAD
 import store from "./store.js";
 import item from "./item.js";
-=======
-
-import store from './store.js';
->>>>>>> 06dda3c38b5382c698a75875468f9d20393b3a59
 
 const generateItemElement = function(item) {
   let itemTitle = `<span class="shopping-item shopping-item__checked">${item.name}</span>`;

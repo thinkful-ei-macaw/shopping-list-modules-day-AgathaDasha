@@ -4,8 +4,6 @@ const store = {
   items: [],
   hideCheckedItems: false
 };
-console.log(item);
-console.log(foo);
 
 //In store.js, create a findById function that accepts an id as its argument:
 //Use the Array find() method to return the specific item from store.items.
@@ -60,11 +58,14 @@ const findAndDelete = function(id) {
   this.items = this.items.filter(currentItem => currentItem.id);
 };
 
+const toggleCheckedFilter = function() {
+  this.hideCheckedItems = !this.hideCheckedItems;
+};
+
 export default {
   items,
   hideCheckedItems,
   findById,
-  findAndToggleChecked,
   findAndToggleChecked,
   findAndUpdateName,
   findAndDelete

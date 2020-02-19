@@ -3,12 +3,6 @@ import item from "./item.js"; */
 
 import item from "./store.js";
 
-const main = function() {
-  shoppingList.bindEventListeners();
-  shoppingList.render();
-};
-$(main);
-
 store.addItem("bananas");
 store.addItem("apples");
 store.addItem("rice");
@@ -17,3 +11,9 @@ let id = store.items[0].id;
 // delete this item from the store
 store.findAndDelete(id);
 shoppingList.render();
+
+const main = function() {
+  shoppingList.bindEventListeners();
+  shoppingList.render();
+};
+$(main);

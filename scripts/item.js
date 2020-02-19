@@ -1,5 +1,3 @@
-const foo = "bar";
-
 function validateName() {
   if (name === undefined);
   try {
